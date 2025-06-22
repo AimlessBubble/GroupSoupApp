@@ -16,7 +16,9 @@ code {
   background-color: orange;
   display: flex;
   flex-direction: row;
-  position: static
+  position: static;
+  box-shadow: 0 5px 10px gray;
+
 }
 
 #Banner h1 {
@@ -30,7 +32,8 @@ code {
 }
 
 #SearchBar {
-  margin: 2vh;
+  padding: 3vh;
+  padding-top: 4vh;
   display: flex;
   justify-content: flex-start;
 }
@@ -41,4 +44,26 @@ code {
   padding: 5px;
   width: 70vw;
 }
+
+#MobileNav {
+  position: fixed;
+  left: -100vw;
+  transition: left 0.5s;
+  z-index: 3;
+  width: 40vw;
+}
+
+#MobileNav div {
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vh;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px gray;
+}
+
+
 

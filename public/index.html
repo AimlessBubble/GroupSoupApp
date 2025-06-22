@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/GroupSoupWhite.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -24,7 +24,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>GroupSoup App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -41,3 +41,18 @@
     -->
   </body>
 </html>
+
+<script>
+    document.addEventListener("click", function(event) {
+    var links = document.getElementById("MobileNav");
+    if (event.target.id === "Burger") {
+      if (links.style.left == "-100vw" | links.style.left == "") {
+        links.style.left = "0vw"
+      } else {
+        links.style.left = "-100vw"
+      }
+    } else if (event.target.closest("#MobileNav")) {
+      links.style.left = "-100vw"
+    }
+  });
+</script>
