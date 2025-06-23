@@ -1,7 +1,10 @@
+import Navigation from "./Navigation";
+
 function Home() {
 
   return (
     <div>   
+      <Navigation />
       <section id='SearchBar'>
         <input type='text' placeholder='Search...'>
 
