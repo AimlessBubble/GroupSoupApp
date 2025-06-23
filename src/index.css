@@ -65,5 +65,129 @@ code {
   box-shadow: 0 5px 10px gray;
 }
 
+#LandingLogo {
+  margin-top: 5%;
+  width: 50%;
+  filter: drop-shadow(0 2px 2px gray);
+}
 
+#Landing {
+  height: 100vh;
+  background: linear-gradient( to bottom, white 0%, rgba(255, 149, 0, 0.7) 100%) ;
+}
+
+#LandingSignIn {
+  margin-top: 5%;
+  width: 50vw;
+  border-radius: 30px;
+  border-color: orange;
+  border-style: solid;
+  background-color: white;
+  font-size: 5vw ;
+  color : orange;
+  font-weight: bold;
+  padding: 2%;
+}
+
+#LandingSignIn:active{
+  transform: scale(1.2);
+}
+
+#LandingBar {
+  display: flex;
+  height: 5px;
+  width: 80vw;
+  align-self: center;
+  background-color: orange;
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 30px;
+  filter: drop-shadow(0 3px 2px gray);
+}
+
+#SignInOptions {
+  display: flex;
+  flex-direction: column;
+}
+
+#SignInOptions button {
+  width: 70vw;
+  margin: auto;
+  margin-top: 4vh;
+  background-color: white;
+  border-radius: 5px;
+  border-color: orange;
+  border-style: solid;
+  padding: 7px;
+}
+
+#Login {
+  height: 100vh;
+  background: linear-gradient( to bottom, white 0%, rgba(255, 149, 0, 0.7) 100%) ;
+}
+
+#Login h1 {
+  margin: 10vw;
+  margin-top: 8vh;
+  font-size: 10vw;
+  font-weight: bold;
+  color: orange;
+}
+
+#LoginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#LoginForm input {
+  width: 60vw;
+  margin-top: 10px;
+  margin-left: 12.5vw;  
+  margin-bottom: 2.5px;
+  font-size: 5vw;
+  background-color: transparent;
+  border: none;
+}
+
+.loginBar {
+  display: flex;
+  height: 5px;
+  width: 75vw;
+  align-self: center;
+  background-color: orange;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  filter: drop-shadow(0 3px 2px gray);
+}
+
+#LoginSignIn {
+  margin-top: 5%;
+  width: 50vw;
+  border-radius: 30px;
+  border-color: orange;
+  border-style: solid;
+  background-color: white;
+  font-size: 5vw ;
+  color : orange;
+  font-weight: bold;
+  padding: 2%;
+}
+
+#LoginSignIn:active{
+  transform: scale(1.2);
+}
+
+#LoginBack {
+  color: orange;
+  background-color: transparent;
+  font-size: 8vw;
+  border: none;
+  margin-top: 5vh;
+  text-shadow: 0 2px 2px gray;
+}
+
+#LoginBack:active {
+  transform: scale(1.2);
+}
 

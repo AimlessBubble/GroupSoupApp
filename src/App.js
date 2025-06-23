@@ -4,8 +4,9 @@ import './App.css';
 
 const Home = lazy(() => import('./components/Home'));
 const Account = lazy(() => import('./components/Account'));
-const Groups= lazy(() => import('./components/Groups'));
-
+const Groups = lazy(() => import('./components/Groups'));
+const Landing = lazy(() => import('./components/Landing'));
+const Login = lazy(() => import('./components/Login'));
 
 
 function App() {
@@ -15,9 +16,11 @@ function App() {
         <main>
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Landing />} />
+              <Route path="/login" element={<Login />} />
               <Route path="/account" element={<Account />} />
               <Route path="/groups" element={<Groups />} />
+              <Route path="/home" element={<Home />} />
             </Routes>
           </Suspense>
         </main>

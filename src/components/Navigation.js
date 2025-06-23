@@ -16,7 +16,7 @@ function Navigation() {
             
             <main>
                 <nav id='MobileNav'>
-                    <Link to="/">
+                    <Link to="/home">
                     <div>Home</div>
                     </Link>
                     <Link to="/account">
