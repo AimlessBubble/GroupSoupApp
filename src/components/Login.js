@@ -14,12 +14,12 @@ function Login() {
                     <input type="password" id="password" name="password" placeholder="Password"></input>
                     <div className="loginBar"></div>
                 </form>
-                <button id="LoginSignIn"> Sign in</button>
-                <p> Don't have an account? Sign Up </p>
+                <button type="submit" className="submitButton" onClick={() => navigate('/Home')}> Sign in</button>
+                <p> Don't have an account? <a href="/SignUp"> Sign up </a> </p>
             </section>
 
             <section>
-                <button type="submit" id="LoginBack" onClick={() => navigate('/')}> Take me back! </button>
+                <button className="backButton" onClick={() => navigate('/')}> Take me back! </button>
             </section>
         </div>
     )

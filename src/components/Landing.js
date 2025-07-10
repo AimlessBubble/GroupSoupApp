@@ -11,7 +11,7 @@ function Landing() {
             </section>
 
             <section>
-                <button id="LandingSignIn" onClick={() => navigate('/login')}> Sign in </button>
+                <button className="submitButton" onClick={() => navigate('/login')}> Sign in </button>
                 <div id="LandingBar"></div>
             </section>
 
@@ -20,7 +20,7 @@ function Landing() {
                 <button> Sign in with </button>
                 <button> Sign in with </button>
                 <button> Sign in with </button>
-                <p> Don't have an account? Sign up</p>
+                <p> Don't have an account? <a href="/SignUp"> Sign up </a></p>
             </section>
 
         </div>  
