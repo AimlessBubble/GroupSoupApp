@@ -8,6 +8,10 @@ const Groups = lazy(() => import('./components/Groups'));
 const Landing = lazy(() => import('./components/Landing'));
 const Login = lazy(() => import('./components/Login'));
 const SignUp = lazy(() => import('./components/SignUp'));
+const SetUpOne = lazy(() => import('./components/SetUpOne'));
+const SetUpTwo = lazy(() => import('./components/SetUpTwo'));
+
+
 
 
 
@@ -24,6 +28,8 @@ function App() {
               <Route path="/groups" element={<Groups />} />
               <Route path="/home" element={<Home />} />
               <Route path="/signup" element={<SignUp />} />
+              <Route path="/signup/stepone" element={<SetUpOne />} />
+              <Route path="/signup/steptwo" element={<SetUpTwo />} />
             </Routes>
           </Suspense>
         </main>

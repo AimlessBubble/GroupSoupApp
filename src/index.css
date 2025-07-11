@@ -71,7 +71,7 @@ code {
   filter: drop-shadow(0 2px 2px gray);
 }
 
-#Landing {
+.gradientBackground {
   height: 100vh;
   background: linear-gradient( to bottom, white 0%, rgba(255, 149, 0, 0.7) 100%) ;
 }
@@ -121,15 +121,16 @@ code {
   padding: 7px;
 }
 
-#Login {
-  height: 100vh;
-  background: linear-gradient( to bottom, white 0%, rgba(255, 149, 0, 0.7) 100%) ;
-}
-
-#Login h1 {
+.gradientBackground h1 {
   margin: 10vw;
   margin-top: 8vh;
   font-size: 10vw;
+  font-weight: bold;
+  color: orange;
+}
+
+.gradientBackground h2 {
+  font-size: 6vw;
   font-weight: bold;
   color: orange;
 }
@@ -174,18 +175,6 @@ code {
   transform: scale(1.2);
 }
 
-#SignUpStart {
-  height: 100vh;
-  background: linear-gradient( to bottom, white 0%, rgba(255, 149, 0, 0.7) 100%) ;
-}
-
-#SignUpStart h1 {
-  margin: 10vw;
-  margin-top: 8vh;
-  font-size: 13vw;
-  font-weight: bold;
-  color: orange;
-}
 
 .mt-5 {
   margin-top: 5vh;

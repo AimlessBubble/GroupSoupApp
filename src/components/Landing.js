@@ -4,7 +4,7 @@ function Landing() {
     const navigate = useNavigate();
 
     return (
-        <div id="Landing">
+        <div className="gradientBackground">
 
             <section>
                 <img src={require("../images/GroupSoup.png")} id="LandingLogo"></img>
@@ -20,7 +20,7 @@ function Landing() {
                 <button> Sign in with </button>
                 <button> Sign in with </button>
                 <button> Sign in with </button>
-                <p> Don't have an account? <a href="/SignUp"> Sign up </a></p>
+                <p> Don't have an account? <a href="/signup"> Sign up </a></p>
             </section>
 
         </div>  

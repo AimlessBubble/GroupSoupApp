@@ -4,7 +4,7 @@ function Login() {
     const navigate = useNavigate();
 
     return (
-        <div id="Login">
+        <div className="gradientBackground">
             <h1> Let's make things happen IRL.</h1>
 
             <section>
@@ -14,8 +14,8 @@ function Login() {
                     <input type="password" id="password" name="password" placeholder="Password"></input>
                     <div className="loginBar"></div>
                 </form>
-                <button type="submit" className="submitButton" onClick={() => navigate('/Home')}> Sign in</button>
-                <p> Don't have an account? <a href="/SignUp"> Sign up </a> </p>
+                <button type="submit" className="submitButton" onClick={() => navigate('/home')}> Sign in</button>
+                <p> Don't have an account? <a href="/signup"> Sign up </a> </p>
             </section>
 
             <section>
