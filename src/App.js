@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
 import './App.css';
 
 const Home = lazy(() => import('./components/Home'));
@@ -12,12 +13,12 @@ const SetUpOne = lazy(() => import('./components/SetUpOne'));
 const SetUpTwo = lazy(() => import('./components/SetUpTwo'));
 
 
-
-
-
 function App() {
   return (
     <Router>
+
+    <ScrollToTop />
+
       <div className="App"> 
         <main>
           <Suspense fallback={<div>Loading...</div>}>

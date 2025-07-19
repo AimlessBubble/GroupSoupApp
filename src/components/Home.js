@@ -38,11 +38,6 @@ function Home() {
   return (
     <div>   
       <Navigation />
-      <section id='SearchBar'>
-        <input type='text' placeholder='Search...'>
-
-        </input>
-      </section>
 
       <section>
         <LoadScript googleMapsApiKey={apiKey}>
@@ -51,6 +46,9 @@ function Home() {
             center={center}
             zoom={12}
           >
+            <section id='SearchBar'>
+              <input type='text' placeholder='Search...'></input>
+            </section>
             {places.map((place) => (
               <Marker
                 key={place.id}
